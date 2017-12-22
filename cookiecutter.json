@@ -1,0 +1,31 @@
+{
+    "======================================== BASIC =======================================": "",
+    "project_name": "Project Name",
+    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+    "description": "A short description of the project.",
+    "author": "Ratan Kulshreshtha",
+    "email": "ratan@kulshreshtha.cool",
+    "version": "0.1.0",
+    "license": ["MIT", "BSD", "GPLv3", "Apache Software License 2.0", "Not open source"],
+
+    "======================================= BACKEND ======================================": "",
+    "analytics": ["Google Analytics", "Yandex Metrika", "None"],
+    "use_ckeditor": "n",
+    "use_progressbar": "n",
+    "use_vue_material": "n",
+
+
+    "======================================= FRONTEND =====================================": "",
+    "analytics": ["Google Analytics", "Yandex Metrika", "None"],
+    "use_ckeditor": "n",
+    "use_progressbar": "n",
+    "use_vue_material": "n",
+
+    "======================================= Dev  Ops =====================================": "",
+    "use_celery": "y",
+    "use_travis": "y",
+    "use_fabric_deployment": "n",
+    "use_sentry": "y",
+    "use_mailhog": "y",
+    "static_and_media": ["Amazon S3 (static and media)", "Whitenoise (static) and Amazon S3 (media)", "Whitenoise (static)"],
+}
