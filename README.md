@@ -1,16 +1,25 @@
-Vue-Django Cookiecutter Template
-================================
+# Vue Django Cookiecutter Template
 
-A ookiecutter to create a project with frontend in Vuejs and backend in Django.
+![Built With](https://img.shields.io/badge/built%20with-django%2C%20Vue.js%2C%20cookiecutter-blue.svg?style=for-the-badge)
+[![GitHub license](https://img.shields.io/github/license/RatanShreshtha/cookiecutter-vue-django-template.svg?style=for-the-badge)](https://github.com/RatanShreshtha/cookiecutter-vue-django-template/blob/master/LICENSE)
 
-Requirements
-------------
+A cookiecutter to create a project with front-end in [Vue.js](https://vuejs.org/) and back-end in [Django](https://www.djangoproject.com/) for your full stack projects.
+
+## Requirements
 Install `cookiecutter` command line: `pip install cookiecutter`    
 
-Usage
------
+## Usage
 Generate a new Cookiecutter template layout: `cookiecutter gh:RatanShreshtha/cookiecutter-vue-django-template`    
 
-License
--------
+## Authors
+
+- **Ratan Kulshreshtha** - [RatanShreshtha](https://github.com/RatanShreshtha)
+
+## License
 This project is licensed under the terms of the [MIT License](/LICENSE)
+
+## Acknowledgments
+
+- Hat tip to anyone who's code was used
+- Inspiration
+- etc
