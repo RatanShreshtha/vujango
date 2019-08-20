@@ -1,20 +1,20 @@
 {
-    "======================================== BASIC =======================================": "",
-    "project_name": "Project Name",
+    "----------------------------------------------- Basic ------------------------------------------------": "",
+    "project_name": "My Awesome Project",
     "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
-    "description": "Provide a short description of your project.",
-    "author": "Ratan Kulshreshtha",
-    "email": "ratan@kulshreshtha.cool",
+    "description": "This is my awesome project, the next disruptor.",
+    "author": "Ada Lovelace",
+    "email": "ada@lovelace.cool",
     "version": "0.1.0",
 
-    "======================================= BACKEND ======================================": "",
+    "---------------------------------------------- Backend -----------------------------------------------": "",
     "backend_folder": "server",
 
 
-    "======================================= FRONTEND =====================================": "",
+    "---------------------------------------------- Frontend ----------------------------------------------": "",
     "frontend_folder": "client",
 
-    "======================================= Dev  Ops =====================================": "",
+    "----------------------------------------------- DevOps -----------------------------------------------": "",
     "use_celery": "y",
     "use_prometheus": "y",
     "use_sentry": "y"
