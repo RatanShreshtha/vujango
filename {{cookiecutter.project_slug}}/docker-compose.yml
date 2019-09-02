@@ -1,0 +1,53 @@
+---
+version: "3.3"
+
+volumes:
+  postgres_data: {}
+
+services:
+  {{cookiecutter.backend_service_name}}:
+    build:
+      context: ./{{cookiecutter.backend_folder}}
+    depends_on:
+      - database
+    volumes:
+      - ./{{cookiecutter.backend_folder}}:/app
+    command: >
+      sh -c "python manage.py wait_for_db &&
+      python manage.py migrate &&
+      python manage.py runserver 0.0.0.0:8000"
+    restart: on-failure
+    env_file: ./{{cookiecutter.backend_folder}}/.env
+
+  {{cookiecutter.frontend_service_name}}:
+    build:
+      context: ./{{cookiecutter.frontend_folder}}
+    command: >
+      sh -c "npm run lint --fix &&
+      npm run serve"
+    volumes:
+      - ./.env:/app/.env:ro
+      - ./frontend:/app
+    working_dir: /app
+    restart: on-failure
+    env_file: ./{{cookiecutter.frontend_folder}}/.env
+
+  database:
+    image: postgres:11-alpine
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data
+    env_file: .env
+
+  server:
+    image: nginx:alpine
+    ports:
+      - "8000:80"
+    depends_on:
+      - {{cookiecutter.backend_service_name}}
+      - {{cookiecutter.frontend_service_name}}
+    volumes:
+      - ./{{cookiecutter.backend_folder}}/media/:/media/
+      - ./{{cookiecutter.backend_folder}}/staticfiles/:/staticfiles/
+      - ./nginx/dev.conf:/etc/nginx/nginx.conf:ro
+    logging:
+      driver: none

@@ -1,21 +1,23 @@
 {
-    "----------------------------------------------- Basic ------------------------------------------------": "",
-    "project_name": "My Awesome Project",
-    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
-    "description": "This is my awesome project, the next disruptor.",
-    "author": "Ada Lovelace",
-    "email": "ada@lovelace.cool",
-    "version": "0.1.0",
+  "----------------------------------------------- Basic ------------------------------------------------": "",
+  "project_name": "My Awesome Project",
+  "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+  "short_description": "Analytical Engine - Web Version",
+  "description": "Web interface for The Analytical Engine, world's first general purpose computer.",
+  "author": "Ada Lovelace",
+  "email": "ada@lovelace.cool",
+  "version": "0.1.0",
 
-    "---------------------------------------------- Backend -----------------------------------------------": "",
-    "backend_folder": "server",
+  "---------------------------------------------- Backend -----------------------------------------------": "",
+  "backend_folder": "backend",
+  "backend_service_name": "backend",
 
+  "---------------------------------------------- Frontend ----------------------------------------------": "",
+  "frontend_folder": "frontend",
+  "frontend_service_name": "frontend",
 
-    "---------------------------------------------- Frontend ----------------------------------------------": "",
-    "frontend_folder": "client",
-
-    "----------------------------------------------- DevOps -----------------------------------------------": "",
-    "use_celery": "y",
-    "use_prometheus": "y",
-    "use_sentry": "y"
+  "----------------------------------------------- DevOps -----------------------------------------------": "",
+  "use_celery": "y",
+  "use_prometheus": "y",
+  "use_sentry": "y"
 }
