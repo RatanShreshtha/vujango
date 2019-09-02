@@ -1,6 +1,6 @@
 # {{cookiecutter.project_name}}
 
-> Short blurb about what your product does.
+> {{cookiecutter.short_description}}
 
 [![Built With](vujango-shield)](vujango-shield)
 
@@ -8,7 +8,7 @@
 
 ## Project Structure
 
-Project id divided between {{cookiecutter.backend_folder}} and {{cookiecutter.frontend_folder}} folders, {{cookiecutter.backend_folder}} contains backend built with [Django](Django) + [Django REST framework](Django-Rest-Framework) and {{cookiecutter.frontend_folder}} contains a progressive simgle page application built with [Bootstrap](Bootstrap) + [Vue.js](Vue.js).
+Project id divided between {{cookiecutter.backend_folder}} and {{cookiecutter.frontend_folder}} folders, {{cookiecutter.backend_folder}} contains backend built with [Django](Django) + [Django REST framework](Django-Rest-Framework) and {{cookiecutter.frontend_folder}} contains a progressive single page application built with [Bootstrap](Bootstrap) + [Vue.js](Vue.js).
 
 ## Pre-Requisites
 
@@ -47,7 +47,7 @@ The general way to run commands for {{cookiecutter.frontend_service_name}} servi
 - stack overflow
 - etc
 
-<!-- Markdown link & img dfn's -->
+<!-- Markdown link & img links -->
 
 [bootstrap]: https://getbootstrap.com/
 [django]: https://www.djangoproject.com/

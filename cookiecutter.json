@@ -14,10 +14,5 @@
 
   "---------------------------------------------- Frontend ----------------------------------------------": "",
   "frontend_folder": "frontend",
-  "frontend_service_name": "frontend",
-
-  "----------------------------------------------- DevOps -----------------------------------------------": "",
-  "use_celery": "y",
-  "use_prometheus": "y",
-  "use_sentry": "y"
+  "frontend_service_name": "frontend"
 }
